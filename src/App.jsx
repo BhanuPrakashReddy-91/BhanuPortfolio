@@ -36,63 +36,69 @@ const navigation = [
 
 const metrics = [
   { value: '5+', label: 'Years Experience' },
-  { value: '45%', label: 'Faster Data Availability' },
-  { value: '40%', label: 'Query Performance Gain' },
-  { value: '60%', label: 'Manual Reporting Reduced' },
+  { value: '$850K', label: 'Revenue Recovery Identified' },
+  { value: '81%', label: 'Pipeline Efficiency Improvement' },
+  { value: '35%', label: 'Reporting Errors Reduced' },
 ];
 
 const skills = [
   {
-    title: 'Data Platforms',
-    icon: Database,
-    items: ['Snowflake', 'Azure Synapse', 'BigQuery', 'Redshift', 'SQL Server'],
-  },
-  {
-    title: 'Engineering',
-    icon: Cloud,
-    items: ['Azure Data Factory', 'Databricks', 'DBT', 'GCP Dataflow', 'PySpark'],
-  },
-  {
     title: 'Analytics',
     icon: BarChart3,
-    items: ['Power BI', 'Tableau', 'Looker', 'Alteryx'],
+    items: ['SQL', 'Python', 'Excel', 'Forecasting', 'A/B Testing'],
   },
   {
-    title: 'Governance',
+    title: 'BI & Visualization',
+    icon: Database,
+    items: ['Power BI', 'DAX', 'Tableau', 'Looker', 'Google Data Studio'],
+  },
+  {
+    title: 'Platforms',
+    icon: Cloud,
+    items: ['Snowflake', 'Azure Synapse', 'BigQuery', 'Redshift', 'Azure Data Factory'],
+  },
+  {
+    title: 'Data Management',
     icon: ShieldCheck,
-    items: ['PII Masking', 'Lineage', 'Access Controls', 'Audit Readiness'],
+    items: ['Data Modeling', 'ETL / ELT', 'Data Quality', 'Governance', 'HIPAA'],
   },
 ];
 
 const experience = [
   {
     company: 'MD Anderson Cancer Center',
-    role: 'Sr Data Engineer',
+    role: 'Sr. Data Analyst',
     period: 'Jan 2025 - Present',
     points: [
-      'Modernized legacy batch pipelines into scalable ELT workflows and improved data availability by 45%.',
-      'Built curated reporting layers across Azure Synapse and BigQuery and reduced average query time by 40%.',
-      'Delivered executive Power BI dashboards with near real-time refresh and reduced manual reporting by 60%.',
+      'Analyzed large volumes of clinical and financial data across 15+ integrated source systems to identify $850K in underbilled services and improve claim approval rates by 12%.',
+      'Developed 20+ interactive Power BI dashboards with advanced DAX, row-level security, and star schema models for 200+ stakeholders including executive leadership.',
+      'Applied predictive analysis and statistical forecasting to project patient volume and revenue patterns, reducing resource bottlenecks by 18% over two quarters.',
+      'Used optimized SQL, stored procedures, and CTEs to prepare data for Power BI, reducing dashboard query time from 40 minutes to under 15 minutes.',
+      'Implemented anomaly detection and automated validation rules to identify 10,000+ monthly data discrepancies and improve reporting accuracy by 35%.',
     ],
   },
   {
     company: 'PACCAR',
-    role: 'Data Engineer',
+    role: 'Data Analyst',
     period: 'May 2024 - Dec 2024',
     points: [
-      'Built end-to-end ETL pipelines using Azure Data Factory, Databricks, Azure Synapse, and Snowflake.',
-      'Implemented CDC-based incremental processing and reduced full refresh workloads by more than 60%.',
-      'Created reusable deployment patterns and cut deployment time by 50%.',
+      'Analyzed manufacturing data across 8 global facilities and identified $1.2M in annual cost savings through bottleneck, inventory, and supplier performance analysis.',
+      'Built Power BI dashboards with advanced DAX for production throughput, on-time delivery, defect trends, and inventory turns for plant-level decision making.',
+      'Applied predictive modeling on sensor and maintenance data to reduce unplanned downtime by 22% and improve equipment effectiveness by 15%.',
+      'Centralized reporting from 15+ ERP and manufacturing systems into a SQL-based analytics layer, cutting reconciliation time by 50%.',
+      'Developed supplier scorecards and trend indicators that helped procurement teams achieve 8% material cost reductions.',
     ],
   },
   {
-    company: 'Square',
-    role: 'Data Engineer',
+    company: 'Square / Block',
+    role: 'Data Analyst',
     period: 'Jan 2023 - May 2024',
     points: [
-      'Maintained high-volume financial data platforms supporting billing, reconciliation, and fraud monitoring.',
-      'Optimized Snowflake and BigQuery models and reduced monthly query cost by 35%.',
-      'Standardized KPI logic across finance and risk teams for more consistent reporting.',
+      'Analyzed 500M+ daily payment transaction events using SQL and Python to identify customer behavior and pricing opportunities that contributed to a 7% increase in gross payment volume.',
+      'Built Power BI and Looker dashboards on Snowflake and BigQuery, reducing ad hoc reporting requests by 45% through self service analytics.',
+      'Applied cohort analysis and statistical segmentation in Python to model merchant retention, churn risk, and lifetime value trends, contributing to a 7% retention improvement.',
+      'Optimized SQL queries and data models across Snowflake and BigQuery, reducing compute costs by 35% while improving dashboard load performance by 50%.',
+      'Evaluated A/B test results for product experiments and translated findings into executive insights that influenced roadmap decisions.',
     ],
   },
   {
@@ -100,41 +106,43 @@ const experience = [
     role: 'Data Analyst',
     period: 'Feb 2020 - Jun 2022',
     points: [
-      'Built SQL-based reporting datasets and automated ingestion pipelines using Python and AWS.',
-      'Developed Tableau dashboards and reduced ad hoc reporting requests by 60%.',
-      'Improved query performance by up to 90% through data modeling and SQL optimization.',
+      'Analyzed user behavior, campaign performance, and revenue trends using SQL and Python, helping increase customer retention by 12% and improve marketing ROI by 25%.',
+      'Designed 25+ self-service Tableau and Power BI dashboards for segmentation, funnel analysis, and revenue tracking, reducing ad hoc requests by 60%.',
+      'Automated reporting refresh workflows using Python and SQL, shifting from weekly to daily updates and reducing data lag by 40%.',
+      'Unified CRM, marketing, and transactional data into a governed analytics foundation for cross-functional business teams.',
+      'Investigated conversion funnel drop-offs and supported UX improvements that increased conversion rates by 15%.',
     ],
   },
 ];
 
 const projects = [
   {
-    title: 'Enterprise Healthcare Finance Data Modernization',
-    stack: 'Azure Data Factory, Snowflake, Azure Synapse, BigQuery, Power BI',
+    title: 'Healthcare Revenue Cycle Analytics',
+    stack: 'Power BI, SQL, Python, Azure Data Factory',
     summary:
-      'Replaced fragmented batch jobs with scalable ELT workflows and curated reporting layers for finance, billing, and compliance reporting.',
-    impact: ['45% faster availability', '40% faster queries', '10,000+ discrepancies resolved monthly'],
+      'Analyzed clinical and financial data across 15+ systems to identify underbilled services, improve claim approval rates, and support executive healthcare decisions.',
+    impact: ['$850K identified', '12% claim approval improvement', '35% better data accuracy'],
   },
   {
-    title: 'Manufacturing Analytics Pipeline for Operations Visibility',
-    stack: 'ADF, Databricks, Azure Synapse, Snowflake, CDC, Power BI',
+    title: 'Manufacturing Operations Intelligence',
+    stack: 'Power BI, SQL, Python, Azure Data Factory',
     summary:
-      'Centralized ERP, supplier, and manufacturing data into reusable pipelines and semantic models for operations and procurement leadership.',
-    impact: ['60%+ refresh reduction', '50% faster deployment', '30% less reconciliation rework'],
+      'Built plant-level dashboards and predictive maintenance analytics to improve throughput, reduce downtime, and support supplier performance decisions.',
+    impact: ['$1.2M annual savings', '22% downtime reduction', '8% material cost reduction'],
   },
   {
-    title: 'Real-Time Financial Risk and Fraud Monitoring Platform',
-    stack: 'Snowflake, BigQuery, SQL, Python, Java-integrated sources',
+    title: 'Payments Growth & Retention Analytics',
+    stack: 'SQL, Python, Power BI, Looker, Snowflake, BigQuery',
     summary:
-      'Engineered governed financial datasets for billing, ledger reconciliation, regulatory reporting, and fraud investigation workflows.',
-    impact: ['Hundreds of millions of records daily', '35% lower query cost', 'Stronger audit readiness'],
+      'Analyzed 500M+ daily transaction events, built self-service dashboards, and delivered cohort and segmentation insights for growth and retention strategy.',
+    impact: ['7% GPV increase', '7% retention improvement', '35% lower compute cost'],
   },
   {
-    title: 'Intelligent Data Quality and Reconciliation Accelerator',
-    stack: 'Python, SQL, Snowflake, Azure Synapse, Metadata Tagging',
+    title: 'Customer & Marketing Performance Analytics',
+    stack: 'SQL, Python, Tableau, Power BI',
     summary:
-      'Designed a reusable validation framework to profile data, enforce schema and business rules, and surface reconciliation exceptions before release.',
-    impact: ['Lower QA effort', 'Higher dashboard trust', 'Reusable governance component'],
+      'Unified CRM, marketing, and transaction data to drive segmentation, funnel analysis, campaign tracking, and conversion optimization.',
+    impact: ['12% retention increase', '25% ROI improvement', '15% conversion lift'],
   },
 ];
 
@@ -335,25 +343,15 @@ export default function App() {
 
           <div className="grid min-h-[92vh] items-center gap-10 px-5 pb-8 pt-4 md:px-8 lg:grid-cols-[1.02fr_0.98fr] lg:px-10">
             <motion.div style={{ y: heroY }} className="max-w-3xl">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.75 }}
-                className="mb-5 inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-400/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.28em] text-violet-200"
-              >
-                <Sparkles className="h-4 w-4" />
-                High-End 3D Portfolio
-              </motion.div>
-
               <motion.h1
                 initial={{ opacity: 0, y: 36 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.08, duration: 0.8 }}
                 className="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
               >
-                Bhanu Prakash
-                <span className="block bg-gradient-to-r from-violet-300 via-white to-cyan-300 bg-clip-text text-transparent">
-                  Data Engineer
+                BhanuPrakash
+                <span className="block bg-gradient-to-r from-violet-300 via-white to-cyan-300 bg-clip-text text-2xl font-medium text-transparent md:text-3xl mt-2">
+                  Data Analyst | BI Developer
                 </span>
               </motion.h1>
 
@@ -363,8 +361,7 @@ export default function App() {
                 transition={{ delay: 0.18, duration: 0.8 }}
                 className="mt-6 max-w-2xl text-base leading-8 text-slate-300 md:text-lg"
               >
-                I design cloud-scale data platforms that transform fragmented enterprise data into governed,
-                analytics-ready products across healthcare, financial services, and manufacturing.
+                Data Analyst and BI Developer with 5+ years of experience transforming structured and unstructured data into actionable business insights across healthcare, financial services, and manufacturing.
               </motion.p>
 
               <motion.div
@@ -374,14 +371,16 @@ export default function App() {
                 className="mt-8 flex flex-wrap gap-4"
               >
                 <a
-                  href="mailto:bhanu.pk222@gmail.com"
-                  className="inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:scale-[1.03]"
-                >
-                  <Mail className="h-4 w-4" />
-                  Contact Me
-                </a>
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=bhanu.pk222@gmail.com"
+  target="_blank"
+  rel="noreferrer"
+  className="inline-flex items-center gap-2 rounded-2xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:scale-[1.03]"
+>
+  <Mail className="h-4 w-4" />
+  Contact Me
+</a>
                 <a
-                  href="https://www.linkedin.com/in/bhanuprakashreddynagireddy/"
+                  href="https://www.linkedin.com/in/bhanuprakashnagireddy/"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-2xl border border-white/12 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
@@ -428,14 +427,14 @@ export default function App() {
                   <div className="overflow-hidden rounded-[1.8rem] border border-white/10 bg-slate-950/70">
                     <img
                       src={profileImage}
-                      alt="Bhanu Prakash Nagireddy"
+                      alt="BhanuPrakash Nagireddy"
                       className="h-[540px] w-full object-cover object-center"
                     />
                   </div>
                   <div className="flex items-center justify-between px-3 pb-2 pt-4">
                     <div>
-                      <div className="text-lg font-semibold">Bhanu Prakash Nagireddy</div>
-                      <div className="text-sm text-slate-300">Dallas, Texas</div>
+                      <div className="text-lg font-semibold">BhanuPrakash Nagireddy</div>
+                      <div className="text-sm text-slate-300">United States | Open to Remote and Contract Roles</div>
                     </div>
                     <div className="rounded-2xl border border-emerald-400/20 bg-emerald-400/10 px-3 py-2 text-xs font-medium text-emerald-200">
                       Open to Work
@@ -452,23 +451,20 @@ export default function App() {
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <SectionTitle
             eyebrow="About"
-            title="Engineering trusted data systems for critical decisions."
-            description="My work sits at the intersection of data engineering, analytics, and platform reliability. I build scalable pipelines, governed reporting layers, and reusable quality controls that help teams move faster with confidence."
+            title="Turning complex data into business decisions."
+            description="I specialize in business intelligence, advanced SQL, Power BI dashboarding, and analytics workflows that help organizations move from raw data to measurable action."
           />
           <SectionFade>
             <GlowCard className="p-8 md:p-10">
               <div className="grid gap-6 text-sm leading-8 text-slate-300 md:text-base">
                 <p>
-                  I am a Data Engineer with 5+ years of experience building enterprise data platforms for healthcare,
-                  finance, and manufacturing environments where performance, governance, and trust matter.
+                  I am a Data Analyst and BI Developer with 5+ years of experience transforming large structured and unstructured datasets into clear, actionable insights across healthcare, financial services, and manufacturing.
                 </p>
                 <p>
-                  My core stack includes Snowflake, Azure Synapse, BigQuery, Azure Data Factory, Databricks,
-                  DBT-style transformations, SQL, Python, Power BI, and Tableau.
+                  My core strengths include Power BI dashboard development, advanced DAX, SQL optimization, Python-based analysis, predictive modeling, anomaly detection, and statistical forecasting.
                 </p>
                 <p>
-                  I focus on converting raw operational data into reliable business-facing products through scalable ELT
-                  design, strong validation patterns, curated semantic layers, and secure access controls.
+                  I focus on building analytical solutions that improve decision-making, reduce reporting errors, uncover revenue and cost opportunities, and translate complex business questions into clear KPI-driven dashboards and stories.
                 </p>
               </div>
             </GlowCard>
@@ -480,8 +476,8 @@ export default function App() {
         <div className="mx-auto max-w-7xl">
           <SectionTitle
             eyebrow="Capabilities"
-            title="A modern stack for cloud data platforms."
-            description="Built around engineering discipline, measurable performance gains, and stakeholder-ready analytics delivery."
+            title="Analytics, BI, and insight delivery at scale."
+            description="Built around business intelligence, stakeholder reporting, forecasting, data quality, and measurable business impact."
           />
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {skills.map(({ title, items, icon: Icon }, index) => (
@@ -509,8 +505,8 @@ export default function App() {
         <div className="mx-auto max-w-7xl">
           <SectionTitle
             eyebrow="Experience"
-            title="Enterprise delivery across healthcare, manufacturing, and finance."
-            description="A track record of building reliable data foundations, reducing latency, and translating complex requirements into scalable solutions."
+            title="Delivering analytics across healthcare, manufacturing, and fintech."
+            description="A track record of building dashboards, identifying revenue and cost opportunities, improving data accuracy, and guiding decisions with clear, trusted insights."
           />
           <div className="space-y-5">
             {experience.map((item, index) => (
@@ -543,8 +539,8 @@ export default function App() {
         <div className="mx-auto max-w-7xl">
           <SectionTitle
             eyebrow="Projects"
-            title="High-impact platform work presented as flagship portfolio case studies."
-            description="These case studies highlight platform engineering depth, business alignment, and measurable outcomes across real enterprise environments."
+            title="Analytics case studies with measurable business impact."
+            description="These showcase dashboarding, advanced SQL, forecasting, segmentation, and data storytelling work grounded in your uploaded resume."
           />
           <div className="grid gap-5 xl:grid-cols-2">
             {projects.map((project, index) => (
@@ -588,22 +584,21 @@ export default function App() {
                   <div className="text-sm uppercase tracking-[0.24em] text-violet-200">Certifications</div>
                   <div className="mt-4 space-y-3 text-slate-300">
                     <div>Tableau Desktop Specialist</div>
-                    <div>AWS Certified Solutions Architect - Associate</div>
-                    <div>Cisco Data Analyst Essentials</div>
+                    <div>AWS Certified Solutions Architect (Associate)</div>
+                    <div>Cisco Data Analyst</div>
                   </div>
                 </div>
                 <div>
                   <div className="text-sm uppercase tracking-[0.24em] text-violet-200">Education</div>
                   <div className="mt-4 space-y-3 text-slate-300">
-                    <div>MS in Computer Science</div>
-                    <div>Campbellsville University</div>
-                    <div>BTech in Information Technology</div>
+                    <div>Master of Science in Computer Science - Campbellsville University</div>
+                    <div>Bachelor of Technology in Information Technology - Vasireddy Venkatadri Institute Technological University</div>
                   </div>
                 </div>
                 <div>
                   <div className="text-sm uppercase tracking-[0.24em] text-violet-200">Focus Areas</div>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    {['ELT / ETL', 'Data Quality', 'Cloud Warehousing', 'Executive Analytics', 'Governance', 'Performance Tuning'].map((item) => (
+                    {['Power BI', 'Advanced DAX', 'SQL Optimization', 'Forecasting', 'Anomaly Detection', 'Executive Reporting'].map((item) => (
                       <span key={item} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300">
                         {item}
                       </span>
@@ -627,11 +622,10 @@ export default function App() {
                     Contact
                   </div>
                   <h2 className="text-3xl font-semibold tracking-tight text-white md:text-5xl">
-                    Let’s build reliable data products that scale.
+                    Let’s turn data into business decisions.
                   </h2>
                   <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-300 md:text-base">
-                    I am open to Data Engineer, Analytics Engineer, and cloud data platform roles where I can help
-                    design scalable pipelines, improve platform reliability, and deliver trusted business-facing data products.
+                    I am open to Data Analyst, BI Developer, and Analytics roles where I can build dashboards, uncover actionable insights, and support data driven business decisions.
                   </p>
                 </div>
                 <div className="space-y-4">
